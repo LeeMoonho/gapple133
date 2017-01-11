@@ -63,7 +63,7 @@ int connect_page(char * save)
 
 	while (1)
 	{
-		if ((lenght = recv(sock, result, BUFF_SIZE - 1, 0)) == 0)
+		if ((lenght = recv(sock, result, BUFF_SIZE - 1, 0)) <= 0)
 		{
 			break;
 		}
